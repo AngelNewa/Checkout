@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Your Room"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/ChkIn"
+        style="@style/NewTheme"
+        android:hint="Check In Date" />
+
+    <TextView
+        android:id="@+id/ChkOut"
+        style="@style/NewTheme"
+        android:hint="Check Out Date" />
+
+
+    <TextView
+        style="@style/NewTheme"
+        android:hint="Select Room Type"
+        />
+
+    <Spinner
+        android:id="@+id/spinRoomType"
+        style="@style/NewTheme"
+        />
+
+    <GridLayout
+        style="@style/NewTheme"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/MyStyle"
+            android:hint="Adult"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/MyStyle"
+            android:hint="Child"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/MyStyle"
+            android:hint="Room"
+
+            />
+
+        <EditText
+            android:id="@+id/etAdult"
+            android:layout_width="wrap_content"
+            style="@style/MyStyle"
+            android:hint="0"
+            android:inputType="number"
+
+            />
+
+        <EditText
+            android:id="@+id/etChild"
+            android:layout_width="wrap_content"
+            style="@style/MyStyle"
+            android:hint="0"
+            android:inputType="number"
+
+            />
+
+
+        <EditText
+            android:id="@+id/etRoom"
+            android:layout_width="wrap_content"
+            style="@style/MyStyle"
+            android:hint="0"
+            android:inputType="number"
+
+
+            />
+
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="@style/NewTheme"
+        android:text="Calculate"/>
+
+
+    <TextView
+        style="@style/Style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvTotal"
+        android:text="Total:"
+        />
+    <TextView
+        style="@style/Style2"
+        android:id="@+id/TvVat"
+        android:text="VAT:"
+        />
+    <TextView
+        style="@style/Style2"
+        android:id="@+id/GTotal"
+        android:text="Grand Total:"
+        />
+
+
+
+</LinearLayout>
